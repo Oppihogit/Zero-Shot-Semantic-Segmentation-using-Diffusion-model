@@ -15,4 +15,18 @@ backbone.
 novel and efficient data augmentation method for
 semantic segmentation dataset.
 
+## METHODOLOGY
+![alt text](overview.png)
+Our proposed method shown in the Figure 2, does not rely on
+pre-trained backbones. we stack seen class visual information with their pixel-level semantic expressions as training
+data and train a DDPM model to generate corresponding
+visual-semantic data. During the sampling process, we use
+images with unseen classes as the condition, guiding the
+trained generator to generate matching semantic embedding
+data. Subsequently, we constructed a semantic classifier to
+achieve pixel-level classification of unseen and seen class
+objects within the image realizing semantic segmentation.
+The above technical details were elaborated in the following
+subsections
+
 
