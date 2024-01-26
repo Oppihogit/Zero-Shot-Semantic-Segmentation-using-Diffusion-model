@@ -18,7 +18,7 @@ semantic segmentation dataset.
 ## METHODOLOGY
 ![alt text](overview.png)
 Our proposed method shown in the Figure, does not rely on
-pre-trained backbones. we stack seen class visual information with their pixel-level semantic expressions as training
+pre-trained backbones. we stack seen class visual information with their pixel-level semantic expressions as training
 data and train a DDPM model to generate corresponding
 visual-semantic data. During the sampling process, we use
 images with unseen classes as the condition, guiding the
